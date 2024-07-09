@@ -1,0 +1,112 @@
+{
+  "SelfAwareness": {
+    "role": {
+      "trigger": ["game start", "all"],
+      "questions": [
+        "What is your current role in the game and what objectives do you have?",
+        "How do you understand the rules of the game as your role?",
+        "What strategies align with the rules of the game for your role?",
+        "How do you plan to interact with other players based on your role?"
+      ]
+    }
+  },
+  "Memory": {
+    "witnessing_actions": {
+      "trigger": ["every round", "all"],
+      "questions": [
+        "Where did you last see each player and what were they doing?",
+        "Who have you seen completing tasks, and where?",
+        "How does this information inform your decisions moving forward in the game?",
+        "Have you noticed any suspicious behavior or movements from any player?",
+        "Can you recall any unusual or out-of-place actions performed by other players?",
+        "Is there anyone whose whereabouts or actions seem unclear or unaccounted for?",
+        "Do you remember any interactions or conversations between players that stood out to you?",
+        "Have you witnessed any players entering or exiting certain areas frequently?",
+        "Are there any patterns or trends in player behavior that you've observed?"
+      ]
+    }
+  },
+  "Planning": {
+    "general_strategy_as_impostor": {
+      "trigger": ["every round", "Impostor"],
+      "questions": [
+        "What is your next strategy for winning the game?",
+        "What is your plan for when to kill and how to avoid suspicion?",
+        "Who do you want to kill next?"
+      ]
+    },
+    "discussion_strategy_as_impostor": {
+        "trigger": ["call meeting", "Impostor"],
+        "questions": [
+          "How will you use the voting phase to manipulate other players?"
+        ]
+    },
+    "general_strategy_as_crew": {
+      "trigger": ["every round", "Crewmate"],
+      "questions": [
+        "As a crew member, how will you prioritize your tasks to win?",
+        "What is your strategy for observing and gathering evidence against potential impostors?"
+      ]
+    },
+    "discussion_strategy_as_crew": {
+        "trigger": ["call meeting", "Crewmate"],
+        "questions": [
+          "How you will use the discussion phase to get the information you want?",
+          "What information do you plan to share in the Discussion phase?",
+          "How you will convince people that your message is true?"
+        ]
+    }
+  },
+  "Reasoning": {
+    "task_verification": {
+      "trigger": ["every round", "Crewmate"],
+      "questions": [
+        "Who do you think is actually completing a task and who is just pretending?"
+      ]
+    },
+    "crime_inference": {
+      "trigger": ["call meeting", "Crewmate"],
+      "questions": [
+        "Based on the clues at the scene and recent activities, who do you think is the killer?",
+        "What behavior have you observed that makes you suspect them?"
+      ]
+    },
+    "behavioral_analysis": {
+      "trigger": ["every round", "Crewmate"],
+      "questions": [
+        "Why do you think a person stayed in one place for a long time?",
+        "Does this behavior suggest they are completing a task, hiding, or planning something else?"
+      ]
+    },
+    "discussion_analysis": {
+      "trigger": ["call meeting", "Crewmate"],
+      "questions": [
+        "Who do you think is telling the truth and who is lying in the discussion?",
+        "What cues lead you to believe someone may be the impostor?"
+      ]
+    },
+    "voting_strategy": {
+      "trigger": ["call meeting", "Crewmate"],
+      "questions": [
+        "What is your strategy for the upcoming vote?",
+        "How would you decide whom to vote for based on the discussion?"
+      ]
+    },
+    "deceive_strategy": {
+        "trigger": ["call meeting", "Impostor"],
+        "questions": [
+          "What will you say in your discussion to mislead the crews?"
+        ]
+      }
+  },
+  "Reflection": {
+    "post_game_analysis": {
+      "trigger": ["game end", "all"],
+      "questions": [
+        "Reflecting on the game, what do you think you did well?",
+        "What could you improve for the next game?",
+        "If you could change one decision you made during the game, what would it be and why?"
+      ]
+    }
+  }
+}
