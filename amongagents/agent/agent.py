@@ -1,5 +1,5 @@
 from typing import Any
-from envs.tools import AgentResponseOutputParser
+from amongagents.envs.tools import AgentResponseOutputParser
 import numpy as np
 import random
 import os

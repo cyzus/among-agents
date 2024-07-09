@@ -1,5 +1,5 @@
 import networkx as nx
-from envs.configs.map_config import room_data, connections, vent_connections
+from amongagents.envs.configs.map_config import room_data, connections, vent_connections
 
 class Map:
     def __init__(self, room_data=room_data, connections=connections, vent_connections=vent_connections):

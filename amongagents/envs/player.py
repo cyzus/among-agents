@@ -1,4 +1,4 @@
-from envs.action import COMMON_ACTIONS, CREWMATE_ACTIONS, IMPOSTER_ACTIONS, CompleteTask
+from amongagents.envs.action import COMMON_ACTIONS, CREWMATE_ACTIONS, IMPOSTER_ACTIONS, CompleteTask
 PLAYER_COLORS = ["red", "blue", "green", "pink", "orange", "yellow", "black", "white", "purple", "brown", "cyan", "lime"]
 
 

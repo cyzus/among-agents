@@ -1,6 +1,6 @@
 import numpy as np
 from time import time
-from envs.configs.task_config import task_config
+from amongagents.envs.configs.task_config import task_config
 import copy
 import networkx as nx
 

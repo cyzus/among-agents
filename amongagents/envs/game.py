@@ -1,14 +1,14 @@
 import random
-from envs.map import Map, Spaceship
-from envs.player import Crewmate, Impostor, PLAYER_COLORS
-from agent.agent import RandomAgent, HumanAgent, LLMAgent, LLMHumanAgent
-from envs.task import TaskAssignment
-from envs.configs.game_config import FIVE_MEMBER_GAME, SEVEN_MEMBER_GAME
-from envs.configs.agent_config import IMPOSTOR_LLM, CREWMATE_LLM, ALL_RANDOM, ALL_LLM
-from envs.tools import GetBestPath
+from amongagents.envs.map import Map, Spaceship
+from amongagents.envs.player import Crewmate, Impostor, PLAYER_COLORS
+from amongagents.agent.agent import RandomAgent, HumanAgent, LLMAgent, LLMHumanAgent
+from amongagents.envs.task import TaskAssignment
+from amongagents.envs.configs.game_config import FIVE_MEMBER_GAME, SEVEN_MEMBER_GAME
+from amongagents.envs.configs.agent_config import IMPOSTOR_LLM, CREWMATE_LLM, ALL_RANDOM, ALL_LLM
+from amongagents.envs.tools import GetBestPath
 import numpy as np
-from agent.prompts import TASK_PHASE_INSTRUCTION, MEETING_PHASE_INSTRUCTION
-from agent.prompts import ImpostorPersonalities, CrewmatePersonalities
+from amongagents.agent.prompts import TASK_PHASE_INSTRUCTION, MEETING_PHASE_INSTRUCTION
+from amongagents.agent.prompts import ImpostorPersonalities, CrewmatePersonalities
 
 class AmongUs:
     def __init__(self, 
